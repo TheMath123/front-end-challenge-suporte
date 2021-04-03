@@ -1,0 +1,260 @@
+/* Fontes */
+@font-face {
+    font-family: FuturaPT-Demi;
+    src: url('./assets/Futura/FuturaPTDemi.otf');
+}
+@font-face {
+    font-family: FuturaPT-ExtraBold;
+    src: url('./assets/Futura/FuturaPTExtraBold.otf');
+}
+@font-face {
+    font-family: FuturaPT-Bold;
+    src: url('./assets/Futura/FuturaPTBold.otf');
+}
+@font-face {
+    font-family: FuturaPT-Book;
+    src: url('./assets/Futura/FuturaPTBook.otf');
+}
+
+/* Corpo do site */
+body {
+    background: #2B222F;
+    margin: 0;
+    padding: 0;
+    font-family: FuturaPT-Demi, sans-serif;
+    width: 320px;
+    height: 726px;
+}
+
+/* Barra de navegação */
+header {
+    position: fixed;
+    background: #18131F;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar { 
+    display: flex;
+    width: 100%;
+}
+
+/* Alinhamento Logo */
+#logo {
+    background: transparent url('img/Grupo 2801.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.logo {
+    margin-top: 17px;
+}
+
+/* Botão contato pelo telefone */
+#phone {
+    padding: 8px;
+    font-size:15px;
+    color: #FFFFFF;
+}
+.btn-phone {
+    margin: 13px 0 0 15px;
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    border-radius: 100%;
+    background: #FF1430;
+    text-align: center;
+}
+
+/* Botão de contato Whatsapp */
+#whatsapp {
+    padding: 6px;
+    font-size:19px;
+    color: #FFFFFF;
+    
+}
+.btn-whatsapp {
+    margin: 13px 0 0 15px;
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    border-radius: 100%;
+    background: #2FB640;
+    text-align: center;
+}
+
+/* Botão FIAT */
+#fiat {
+    margin: 2px 0 0 5px;
+    padding: 15px;
+}
+
+/* Botão check para funcionalidade de abrir/fechar */
+#check {
+    display: none;
+}
+.checkbtn {
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* Menu Hamburgue */
+.menu-burgue {
+    margin-top: 19px;
+}
+.mainMenu{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 60px; /* mudar */
+    width: 300px;
+    background: #433B47;
+    list-style: none;
+    display: none;
+    overflow: auto;
+}
+.mainMenu li{
+    padding: 15px;
+}
+.mainMenu a:hover{
+    color: #FF1430;
+}
+.mainMenu li a{
+    text-align: left;
+    font: normal normal bold 14px FuturaPT-Demi;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+@media (max-width: 400px)  { /* "Responsividade" */
+    .mainMenu{
+        width: 100%;
+    }   
+}
+
+.bar { /* Barra de separação dos itens no menu */
+    margin: 0 5% 0 15px;
+    border: 1px solid #726C75;
+    opacity: 1;
+}
+
+/* Notificação de novo item */
+.new{
+    color: #FFFFFF;
+    font-size: 11px;
+    padding: 3px 5px;
+    letter-spacing: 1px;
+    margin-left: 9px;
+    background: #FF1430;
+    border-radius: 7px;
+}
+
+/* Menu instituição */
+#item1 {
+    background: #FF1430 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 4px #00000026;
+    color: #FFFFFF;
+}
+#item1:hover{
+    background: #c20e23;
+}
+.menuInst {
+   list-style: none;
+   display: none;
+}
+
+.arrow{ /* Fecha indicativa aberto ou fechado */
+    margin-right: 6px;
+    float: right;
+    color: #FFFFFF;
+    transform: rotate(180deg);
+}
+
+/* Botão do Whastapp flutuate */
+.btn-whatsapp-floating{
+    position:fixed;
+    bottom:174px;
+    right:10px;
+    z-index:998;
+}
+
+/* Carrossel Banner */
+.carouselBannerd {
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+@media (max-width: 800px)  { /* "Responsividade" */
+    .mainMenu{
+        width: 100%;
+    }
+    .carouselBannerd  img {
+        src: url('./assets/BANNER-MOBILE@2x.png');
+    }  
+}
+
+/* Carrosel Modelos de carros */
+.carModels {
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.carouselCarModels {
+    display: flex;
+    text-align: center;
+    margin: 15px;
+    justify-content: center;
+}
+.divCars {
+    padding: 0 15px 0 15px;
+}
+.titleLayout{
+    font: normal normal bold 18px FuturaPT-ExtraBold;
+    color: #EDEDE3;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.textLayout{
+    margin-top: 0;
+    text-align: center;
+    font: normal normal normal 18px FuturaPT-Book;
+    letter-spacing: 1px;
+    color: #D0CED1;
+}
+
+.saibaMais {
+    text-decoration: none;
+    text-align: left;
+    font: normal normal bold 16px FuturaPT-Bold;
+    letter-spacing: 2px;
+    color: #EDEDE3;
+}
+
+.img-red-arrow{
+    padding-right: 10px;
+}
+
+.scrollBar{
+    position: relative;
+    left: 15px;
+    width: 290px;
+    height: 8px;
+}
+
+.btnModels {
+    background: none;
+    position: relative;
+    /* left: 11%; */
+    margin: 15px;
+    font: normal normal bold 14px FuturaPT-Bold;
+    color: #EDEDE3;
+    border: 1px solid #FF1430;
+    width: 291px;
+    height: 50px;
+}

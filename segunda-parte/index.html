@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="menu-burgue">
+                <input type="checkbox" onclick="burgue()" id="check">
+                <label for="check" class="checkbtn">
+                    <img id="icon-menu" src="assets/menu.svg" alt="Menu">
+                </label>
+            </div>
+
+            <a class="logo" href="./index.html">
+                <img id="logo" src="assets/logo-dealer.svg" alt="Logo Dealer">
+            </a>
+
+            <a class="btn-phone" href="#invible-div-phone">
+                <i id="phone" class="fa fa-phone" aria-hidden="true" ></i>
+            </a>
+
+            <a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=551111111111" target="_blank">
+                <i id="whatsapp" class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+
+            <a class="fiatSite" href="https://www.fiat.com.br/" target="_blank">
+                <img id="fiat" src="assets/fiat.svg" alt="Logo da FIAT">
+            </a>
+            <ul class="mainMenu">
+                <li id="item1" onclick="menuInst()">Institucional<span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span></li>
+                <div>
+                    <ul class="menuInst">
+                        <li><a href="#">Quem Somos</a></li>
+                        <hr class="bar">
+                        <li><a href="#">Fale Conosco</a></li>
+                        <hr class="bar">
+                        <li><a href="#">Endereços</a></li>
+                        <hr class="bar">
+                    </ul>
+                </div>
+                <li><a href="#">Novos</a></li>
+                <hr class="bar">
+                <li><a href="#">Ofertas</a></li>
+                <hr class="bar">
+                <li><a href="#">Seminovos</a></li>
+                <hr class="bar">
+                <li><a href="#">Consórcio</a><span class="new">Novo</span></li>
+                <hr class="bar">
+                <li><a href="#">Vendas Direta</a></li>
+                <hr class="bar">
+                <li><a href="#">Lifestyle</a></li>
+                <hr class="bar">
+                <li><a href="#">Pós-vendas</a></li>
+            </ul>
+
+            
+        </div>
+    </header>
+
+    <div class="carouselBannerd">
+        <div><img src="assets/BANNER-MOBILE.png" alt="Banner Carro"></div>
+    </div>
+
+    <div class="carModels">
+        <div class="carouselCarModels">
+            <div id="car1" class="divCars">
+                <img src="./assets/cronos.png" alt="Cronos">
+                <h2 class="titleLayout">CRONOS</h2>
+                <p class="textLayout">A partir de R$ 129.990</p>
+                <a class="saibaMais" href="https://cronos.fiat.com.br/" target="_blank" > <img class="img-red-arrow"src="./assets/setinha-vermelha.svg"> SAIBA MAIS</a>
+            </div>
+            <div id="car2" class="divCars">
+                <img src="./assets/argo.png" alt="Argo">
+                <h2 class="titleLayout">ARGO</h2>
+                <p class="textLayout">A partir de R$ 169.990</p>
+                <a class="saibaMais" href="https://argo.fiat.com.br/" target="_blank" > <img class="img-red-arrow" src="./assets/setinha-vermelha.svg"> SAIBA MAIS</a>
+            </div>
+        </div>
+        <img class="scrollBar"src="./assets/barra-rolagem-models.svg">
+        <button class="btnModels">Ver Todos Os Modelos</button>
+    </div>
+
+    <a class="btn-whatsapp-floating" href="https://api.whatsapp.com/send?phone=551111111111"target="_blank">
+    <img src="./assets/floating-whatsapp-btn.svg" alt="Entre em contato pelo no whatsapp">
+    </a>
+			
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
